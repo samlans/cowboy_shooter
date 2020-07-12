@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Unity/cowboyshooter/Assets/Terrain/Distance1.asset.meta
+guid: 2078916c38c5ffc47b3c30ff8c5a9018
+=======
+guid: da20e0d1eb2dad54cbeaa15de5c831cd
+>>>>>>> 3ebb751f825c5a09f1915d024ba3a7436cdc7ff7:Unity/cowboyshooter/Assets/Terrain/BehindHill.asset.meta
+=======
+guid: 2078916c38c5ffc47b3c30ff8c5a9018
+>>>>>>> 3ebb751f825c5a09f1915d024ba3a7436cdc7ff7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

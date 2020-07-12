@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: b7c8647ed298d4c438db1e96487d4bdb
+NativeFormatImporter:
+=======
+<<<<<<< HEAD:Unity/cowboyshooter/Assets/Skybox.meta
+guid: 844789a93e63cd64aa9595f437ce63f1
+folderAsset: yes
+DefaultImporter:
+=======
+guid: b7c8647ed298d4c438db1e96487d4bdb
+NativeFormatImporter:
+>>>>>>> 3ebb751f825c5a09f1915d024ba3a7436cdc7ff7:Unity/cowboyshooter/Assets/Terrain/TerrainData_1624b921-69ed-4f33-b054-75e03ac089c4.asset.meta
+>>>>>>> 3ebb751f825c5a09f1915d024ba3a7436cdc7ff7
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
