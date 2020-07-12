@@ -13,7 +13,9 @@ Unity/cowboyshooter/[Bb]uild/
 Unity/cowboyshooter/[Bb]uilds/
 Unity/cowboyshooter/[Ll]ogs/
 Unity/cowboyshooter/[Uu]ser[Ss]ettings/
-Unity/cowboyshooter/[Aa]ssets/[Ss]amples/
+Unity/cowboyshooter/[Aa]ssets/[Ss]ample*
+Unity/cowboyshooter/[Aa]ssets/8K*
+Unity/cowboyshooter/[Aa]ssets/UnityStandardAssets/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 Unity/cowboyshooter/[Mm]emoryCaptures/
