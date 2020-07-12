@@ -27,9 +27,6 @@ public class FPSInput : MonoBehaviour
         );
         movement = Vector3.ClampMagnitude(movement, speed);     
         
-        
-        //movement *= Time.deltaTime;
-        
         // Transform the movement vector from local to global coordinates.
         movement = transform.TransformDirection(movement);
         movement.y = gravity;
