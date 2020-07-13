@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 3cb843561eb76014d8c8bfcedc2ce27b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 558665058}
   - component: {fileID: 558665057}
   m_Layer: 0
-  m_Name: BehindHill (1)
+  m_Name: BehindHill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -790,7 +790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654550110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -315.04767, y: 223.11147, z: -192.41467}
+  m_LocalPosition: {x: -315.04767, y: 224.74, z: -192.41467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -809,8 +809,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fe24b63988e744b8ccd67f51c981e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
-  gravity: -9.8
+  walkSpeed: 8
+  sprintSpeed: 12
+  jumpSpeed: 20
+  gravity: 0.5
 --- !u!143 &654550113
 CharacterController:
   m_ObjectHideFlags: 0
@@ -854,8 +856,8 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654550110}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -935,7 +937,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -992,13 +994,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.6884008, y: -0.18155748, z: 0.18445642, w: 0.6775818}
   m_LocalPosition: {x: 34.674545, y: 85.60944, z: -60.03539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.90698, y: -30, z: -0.000015258789}
 --- !u!1 &727810321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1088,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1159,23 +1160,6 @@ Transform:
   m_Father: {fileID: 654550111}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18033117de0e50c4badc67e1145ba0d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axes: 0
-  sensitivityHor: 9
-  sensitivityVert: 9
-  minimumVert: -45
-  maximumVert: 45
 --- !u!1 &1052965739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,7 +1844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584951095}
   m_LocalRotation: {x: -0, y: -0.99999803, z: -0, w: 0.0020002814}
-  m_LocalPosition: {x: -118.05194, y: 88.59283, z: -136.0354}
+  m_LocalPosition: {x: -118.05194, y: 86.7, z: -136.0354}
   m_LocalScale: {x: 16.730442, y: 5.6750436, z: 27.654224}
   m_Children: []
   m_Father: {fileID: 1289514489}
@@ -2124,7 +2108,7 @@ GameObject:
   - component: {fileID: 1624907413}
   - component: {fileID: 1624907412}
   m_Layer: 0
-  m_Name: Terrain_(234.7, 82.6, 140.0)
+  m_Name: Ravine 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,12 +2165,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624907411}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 234.67455, y: 49.4, z: 139.96461}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 200, y: -33.209442, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 2015367066}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838655412
 GameObject:
@@ -2200,7 +2184,7 @@ GameObject:
   - component: {fileID: 1838655414}
   - component: {fileID: 1838655413}
   m_Layer: 0
-  m_Name: Distance1
+  m_Name: Ravine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2589,6 +2573,7 @@ Transform:
   - {fileID: 1188242691}
   - {fileID: 727810324}
   - {fileID: 558665056}
+  - {fileID: 1624907414}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
