@@ -24,7 +24,7 @@ public class MouseLook : MonoBehaviour
         if (axes == RotationAxes.MouseX)
         {
             transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityHor, 0);
-            Debug.Log(_rotationX);
+            //Debug.Log(_rotationX);
 
         }
         //vertical rotation here
@@ -37,7 +37,7 @@ public class MouseLook : MonoBehaviour
 
             transform.localEulerAngles = new Vector3(_rotationX, rotationY, 0);
 
-            Debug.Log(rotationY);
+            //Debug.Log(rotationY);
         }
         //both horizontal and vertical rotation here
         else
@@ -50,8 +50,8 @@ public class MouseLook : MonoBehaviour
 
             transform.localEulerAngles = new Vector3(_rotationX, rotationY, 0);
             
-            Debug.Log(_rotationX);
-            Debug.Log(rotationY);
+            //Debug.Log(_rotationX);
+            //Debug.Log(rotationY);
         }
 
     }
